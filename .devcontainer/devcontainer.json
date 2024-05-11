@@ -1,0 +1,31 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Debian",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/terraform:1": {},
+		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {},
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/paul-gilber/devcontainer-features/eksctl-homebrew:1": {},
+		"ghcr.io/devcontainers-community/npm-features/typescript:1": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"HashiCorp.terraform:2.29.2023121311": {},
+		"ms-azuretools.vscode-docker:1.28.0": {},
+	},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
